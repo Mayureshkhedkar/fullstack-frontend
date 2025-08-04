@@ -19,7 +19,7 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/api/user/adduser", user);
+    await axios.post("https://fullstack-backend-ktb8.onrender.com/api/user/adduser", user);
     navigate("/");
   };
 

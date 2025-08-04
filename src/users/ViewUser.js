@@ -16,7 +16,7 @@ export default function ViewUser() {
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get(`http://localhost:8080/api/user/getuserbyid/${id}`);
+    const result = await axios.get(`https://fullstack-backend-ktb8.onrender.com/api/user/getuserbyid/${id}`);
     setUser(result.data);
   };
 
