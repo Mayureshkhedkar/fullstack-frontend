@@ -19,7 +19,7 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("https://fullstack-backend-ktb8.onrender.com/api/user/adduser", user);
+    await axios.post("https://97c122895134.ngrok-free.app/api/user/adduser", user);
     navigate("/");
   };
 

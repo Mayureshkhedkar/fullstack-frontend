@@ -12,12 +12,12 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("https://fullstack-backend-ktb8.onrender.com/api/user/getall");
+    const result = await axios.get("https://97c122895134.ngrok-free.app/api/user/getall");
     setUsers(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`https://fullstack-backend-ktb8.onrender.com/api/user/deleteuser/${id}`);
+    await axios.delete(`https://97c122895134.ngrok-free.app/api/user/deleteuser/${id}`);
     loadUsers();
   };
 

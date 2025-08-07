@@ -25,12 +25,12 @@ export default function EditUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`https://fullstack-backend-ktb8.onrender.com/user/${id}`, user);
+    await axios.put(`https://97c122895134.ngrok-free.app/user/${id}`, user);
     navigate("/");
   };
 
   const loadUser = async () => {
-    const result = await axios.get(`https://fullstack-backend-ktb8.onrender.com/user/${id}`);
+    const result = await axios.get(`https://97c122895134.ngrok-free.app/user/${id}`);
     setUser(result.data);
   };
 
